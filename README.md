@@ -14,7 +14,7 @@ For more information on how to this works with other frontends/backends, head ov
 - **Symfony 8** - Modern PHP framework with robust architecture
 - **Doctrine ORM** - Database abstraction layer and object mapping
 - **PostgreSQL** - Powerful relational database
-- **Pest** - Comprehensive testing framework
+- **PHP Unit** - Comprehensive testing framework
 
 ### Frontend
 - **Twig** - Server-side templating engine with inheritance and components
@@ -30,9 +30,9 @@ For more information on how to this works with other frontends/backends, head ov
 
 ## Prerequisites
 
-- **PHP 8.1+** with required extensions (pdo_pgsql, tokenizer, curl, xml, mbstring)
+- **PHP 8.4+** with required extensions (pdo_pgsql, tokenizer, curl, xml, mbstring)
 - **Node.js 18+** and npm/yarn
-- **PostgreSQL 13+** 
+- **PostgreSQL 13+**
 - **Composer** for PHP dependencies
 - **Docker** (optional, for development environment)
 
@@ -70,9 +70,6 @@ php bin/console doctrine:database:create
 
 # Run database migrations
 php bin/console doctrine:migrations:migrate
-
-# Load demo data (optional)
-php bin/console doctrine:fixtures:load
 ```
 
 ### 4. Asset Compilation
@@ -89,7 +86,7 @@ npm run dev
 
 ```bash
 # Start Symfony development server
-php bin/console server:start
+symfony serve
 
 # Or use Docker Compose (if configured)
 docker-compose up -d
@@ -100,9 +97,6 @@ Your application should now be available at `http://localhost:8000`
 ## Development Commands
 
 ```bash
-# Run tests
-php bin/pest
-
 # Fix code style
 php vendor/bin/php-cs-fixer fix
 ```
@@ -141,16 +135,6 @@ This implementation fully complies with the [RealWorld API specification](https:
 
 ### Tags
 - `GET /api/tags` - Get all tags
-
-## Contributing
-
-When contributing to this project:
-
-1. **Follow PSR standards** for PHP code style
-2. **Write tests** for new features and bug fixes
-3. **Update documentation** for any API or frontend changes
-4. **Run the full test suite** before submitting pull requests
-5. **Check code quality** with PHPStan and PHP-CS-Fixer
 
 ## License
 
