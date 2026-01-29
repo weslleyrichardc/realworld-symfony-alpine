@@ -11,7 +11,7 @@ For more information on how to this works with other frontends/backends, head ov
 # Technology Stack
 
 ### Backend
-- **Symfony 8** - Modern PHP framework with robust architecture
+- **Symfony 7** - Modern PHP framework with robust architecture
 - **Doctrine ORM** - Database abstraction layer and object mapping
 - **PostgreSQL** - Powerful relational database
 - **Pest** - Comprehensive testing framework
@@ -30,7 +30,7 @@ For more information on how to this works with other frontends/backends, head ov
 
 ## Prerequisites
 
-- **PHP 8.1+** with required extensions (pdo_pgsql, tokenizer, curl, xml, mbstring)
+- **PHP 8.2+** with required extensions (pdo_pgsql, tokenizer, curl, xml, mbstring)
 - **Node.js 18+** and npm/yarn
 - **PostgreSQL 13+** 
 - **Composer** for PHP dependencies
